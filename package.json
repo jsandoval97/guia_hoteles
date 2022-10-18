@@ -1,0 +1,52 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Primer proyecto de Nodejs en curso de Diseño de paginas web con Bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\" ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* --out-dir dist/images",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin policy.html -d dist --htmlmin -o dist/policy.html && usemin price.html -d dist --htmlmin -o dist/price.html && usemin terms.html -d dist --htmlmin -o dist/terms.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://newen12@bitbucket.org/newen12/guia-hoteles.git"
+  },
+  "author": "Julia Sandoval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/newen12/guia-hoteles/issues"
+  },
+  "homepage": "https://bitbucket.org/newen12/guia-hoteles#readme",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "cssmin": "^0.4.3",
+    "grunt": "^1.5.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "htmlmin": "^0.0.7",
+    "jit-grunt": "^0.10.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^7.0.3",
+    "onchange": "^7.1.0",
+    "rimraf": "^3.0.2",
+    "time-grunt": "^2.0.0",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.0.7"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "bootstrap-icons": "^1.9.1",
+    "concurrently": "^7.4.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "jquery": "^3.6.1",
+    "popper.js": "^1.16.1"
+  }
+}

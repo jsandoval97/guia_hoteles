@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hoteles</title>
+
+    <!-- build:css dist/price.css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark bg-gradient fixed-top">
+        <a href="#" class="navbar-brand">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/price.html">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="/policy.html">Politica de privacidad</a></li>
+                <li class="nav-item"><a class="nav-link" href="/terms.html">Términos y condiciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron p-5 text-bg-secondary">
+        <h1>Hoteles</h1>
+    </div>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-light">
+                <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Precios</li>
+            </ol>
+        </nav>
+        <ul class="nav nav-tabs" id="myTab" role="tabList">
+            <li class="nav-item">
+                <a class="nav-link active" id="compare-tab" data-bs-toggle="tab" href="#compara" role="tab"
+                    aria-controls="compara" aria-selected="true">Compara</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="compare-tab" data-bs-toggle="tab" href="#tarjetas" role="tab"
+                    aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="compare-tab" data-bs-toggle="tab" href="#comentarios" role="tab"
+                    aria-controls="comentarios" aria-selected="false">Comentarios</a>
+            </li>
+            
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <th>Calidad</th>
+                            <th>Montevideo</th>
+                            <th>Ciudad de la Costa</th>
+                            <th>Maldonado</th>
+                            <th>Piriápolis</th>
+                            <th>Tacuarembó</th>
+                            <th>Cerro Largo</th>
+                            <th>Paso de los toros</th>
+                            <th>Colonia</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="bi bi-star-fill"></i></td>
+                                <td>$ 100</td>
+                                <td>$ 120</td>
+                                <td>$ 150</td>
+                                <td>$ 180</td>
+                                <td>$ 100</td>
+                                <td>$ 120</td>
+                                <td>$ 150</td>
+                                <td>$ 180</td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></td>
+                                <td>$ 200</td>
+                                <td>$ 240</td>
+                                <td>$ 300</td>
+                                <td>$ 360</td>
+                                <td>$ 200</td>
+                                <td>$ 240</td>
+                                <td>$ 300</td>
+                                <td>$ 360</td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i></td>
+                                <td>$ 300</td>
+                                <td>$ 360</td>
+                                <td>$ 600</td>
+                                <td>$ 680</td>
+                                <td>$ 300</td>
+                                <td>$ 360</td>
+                                <td>$ 600</td>
+                                <td>$ 680</td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></td>
+                                <td>$ 400</td>
+                                <td>$ 480</td>
+                                <td>$ 800</td>
+                                <td>$ 1060</td>
+                                <td>$ 400</td>
+                                <td>$ 480</td>
+                                <td>$ 800</td>
+                                <td>$ 1060</td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i></td>
+                                <td>$ 600</td>
+                                <td>$ 680</td>
+                                <td>$ 900</td>
+                                <td>$ 2000</td>
+                                <td>$ 600</td>
+                                <td>$ 680</td>
+                                <td>$ 900</td>
+                                <td>$ 2000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <br>
+                <h6>Tarjetas aceptadas</h6>
+                <div class="accordion" id="accordionTarjetas">
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#visa" aria-expanded="true" aria-controls="collapseVisa">Visa</button>
+                            </h5>
+                            <div class="accordion-collapse collapse" id="visa" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                                 <div class="accordion-body">
+                                    3 cuotas sin interés
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        
+                            <h5 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaster" aria-expanded="false" aria-controls="collapseMaster">MasterCard</button>
+                            </h5>
+                            <div class="accordion-collapse collapse" id="collapseMaster" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                                <div class="accordion-body">
+                                    6 cuotas sin interés
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amex" aria-expanded="false" aria-controls="collapseAmex">American Express</button>
+                            </h5>
+                            <div class="accordion-collapse collapse" id="amex" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+                                <div class="accordion-body">
+                                    12 cuotas sin interés
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer text-bg-dark ">
+        <div class="row">
+            <div class="col">
+                <address>
+                    <p><span><i class="bi bi-geo-alt"></i></span> Montevideo, Uruguay</p>
+                    <p><span><i class="bi bi-telephone"></i></span> +598 99 123 456</p>
+                    <p><span><i class="bi bi-envelope"></i></span> contacto@mail.com</p>
+                </address>
+            </div>
+            <div class="col d-flex flex-column text-center">
+                <a href="http://www.facebook.com" class="social-media-link"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="http://www.instagram.com" class="social-media-link"><i class="bi bi-instagram"></i>
+                    Instagram</a>
+                <a href="http://www.twitter.com" class="social-media-link"><i class="bi bi-twitter"></i> Twitter</a>
+                <a href="http://www.linkedin.com" class="social-media-link"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            </div>
+            <div class="col d-flex flex-column align-items-end">
+                <a href="/about.html">Nosotros</a>
+                <a href="/price.html">Precios</a>
+                <a href="/policy.html">Politica de privacidad</a>
+                <a href="/terms.html">Terminos y condiciones</a>
+                <a href="/contact.html">Contacto</a>
+            </div>
+        </div>
+    </footer>
+    <!-- build:js dist/price.js-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

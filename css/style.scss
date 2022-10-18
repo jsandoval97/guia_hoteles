@@ -1,0 +1,53 @@
+$skyblue: #03a9fc;
+$white:#ffffff;
+$yellow: #fff700;
+$red: #ff0800;
+$green: #00c400;
+
+@mixin margenes ($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+    
+}
+
+@mixin padding ($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+.jumbotron {
+    background-color: $skyblue;
+    color: $white;
+    @include margenes(50px, 0);
+}
+
+.container {
+    @include margenes(20px, 200px);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $skyblue;
+  color: $white;
+}
+
+.card-hotel {
+    @include padding(5px, 0px, 5px, 0px);
+}
+
+.social-media-link {
+    text-decoration: none;
+    color:$white;
+}
+
+.footer-link {
+    color: $white;
+}
+
+.btn-reserva {
+    width: 100%;
+}

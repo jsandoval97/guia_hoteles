@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hoteles</title>
+
+    <!-- build:css dist/contact.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark bg-gradient fixed-top">
+        <a href="#" class="navbar-brand">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="/price.html">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="/policy.html">Politica de privacidad</a></li>
+                <li class="nav-item"><a class="nav-link" href="/terms.html">Términos y condiciones</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/contact.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron p-5 text-bg-secondary">
+        <h1>Hoteles</h1>
+    </div>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-light">
+                <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+            </ol>
+        </nav>
+        <h1>Dejame tu comentario</h1>
+        <form>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre">
+                <label for="name">Nombre</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="surname" placeholder="Ingrese su apellido">
+                <label for="surname">Apellido</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com">
+                <label for="email">Correo electrónico</label>
+            </div>
+            <div class="row g-2">
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="address" placeholder="Ingrese su dirección">
+                        <label for="address">Dirección</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <select class="form-select" id="departamento">
+                            <option selected>--Seleccione un departamento--</option>
+                            <option>Montevideo</option>
+                            <option>Canelones</option>
+                            <option>Florida</option>
+                            <option>Maldonado</option>
+                        </select>
+
+                        <label for="departamento">Departamento</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Escribe tu comentario aquí" id="comment"
+                    style="height: 100px"></textarea>
+                <label for="comment">Deja tu comentario aquí</label>
+            </div>
+            <br>
+            <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Quiero que me contacten
+                  </label>
+                </div>
+              </div>
+              <br>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+    <footer class="footer text-bg-dark ">
+        <div class="row">
+            <div class="col">
+                <address>
+                    <p><span><i class="bi bi-geo-alt"></i></span> Montevideo, Uruguay</p>
+                    <p><span><i class="bi bi-telephone"></i></span> +598 99 123 456</p>
+                    <p><span><i class="bi bi-envelope"></i></span> contacto@mail.com</p>
+                </address>
+            </div>
+            <div class="col d-flex flex-column text-center">
+                <a href="http://www.facebook.com" class="social-media-link"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="http://www.instagram.com" class="social-media-link"><i class="bi bi-instagram"></i>
+                    Instagram</a>
+                <a href="http://www.twitter.com" class="social-media-link"><i class="bi bi-twitter"></i> Twitter</a>
+                <a href="http://www.linkedin.com" class="social-media-link"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            </div>
+            <div class="col d-flex flex-column align-items-end">
+                <a href="/about.html">Nosotros</a>
+                <a href="/price.html">Precios</a>
+                <a href="/policy.html">Politica de privacidad</a>
+                <a href="/terms.html">Terminos y condiciones</a>
+                <a href="/contact.html">Contacto</a>
+            </div>
+        </div>
+    </footer>
+    <!-- build:js dist/contact.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

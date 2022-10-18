@@ -1,0 +1,27 @@
+.jumbotron {
+    margin-top: 50px;
+}
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.card-hotel {
+   padding: 5px 0px 5px 0px;
+}
+
+.social-media-link {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-reserva {
+    width: 100%;
+}
